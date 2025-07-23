@@ -1,6 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import mysql from 'mysql';
+import mysql from 'mysql2';
 
 const app = express();
 app.use(bodyParser.json());
@@ -13,7 +13,7 @@ const connection = mysql.createConnection({
 }); 
 
 
-app.get('/user', (req, res) => {
+app.get('/users', (req, res) => {
     connection.query(`SELECT * FROM users`, 
     (error, 
     results,

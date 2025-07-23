@@ -1,6 +1,7 @@
 {
   "name": "currency-exchange-api",
   "version": "3.0.0",
+  "type": "module",
   "description": "A comprehensive currency exchange system API with real-time rates and conversion capabilities",
   "main": "src/app.js",
   "scripts": {

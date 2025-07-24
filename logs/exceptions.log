@@ -1,0 +1,832 @@
+2025-07-23 15:00:03 [ERROR]: uncaughtException: userRoutes is not defined
+ReferenceError: userRoutes is not defined
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js:104:26)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+ReferenceError: userRoutes is not defined
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js:104:26)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-07-23 15:00:26 [ERROR]: uncaughtException: userRoutes is not defined
+ReferenceError: userRoutes is not defined
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js:104:26)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+ReferenceError: userRoutes is not defined
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js:104:26)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-07-23 15:05:53 [ERROR]: uncaughtException: Cannot find module './routes/userRoutes'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module './routes/userRoutes'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js:18:20)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module './routes/userRoutes'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js:18:20)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:07:03 [ERROR]: uncaughtException: Cannot find module './routes/userRoutes'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module './routes/userRoutes'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js:18:20)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module './routes/userRoutes'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js:18:20)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:08:50 [ERROR]: uncaughtException: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\UserController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\UserController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\UserController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:23:00 [ERROR]: uncaughtException: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\UserController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\UserController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\UserController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:27:05 [ERROR]: uncaughtException: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\UserController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\UserController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\UserController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:27:52 [ERROR]: uncaughtException: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\UserController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\UserController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\UserController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:28:55 [ERROR]: uncaughtException: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\UserController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\UserController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\UserController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:36:17 [ERROR]: uncaughtException: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:37:29 [ERROR]: uncaughtException: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:37:38 [ERROR]: uncaughtException: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:38:39 [ERROR]: uncaughtException: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:38:50 [ERROR]: uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\Administrator\Desktop\currency_exchange_v3\node_modules\express\lib\router\route.js:216:15)
+    at proto.<computed> [as get] (C:\Users\Administrator\Desktop\currency_exchange_v3\node_modules\express\lib\router\index.js:521:19)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js:6:8)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\Administrator\Desktop\currency_exchange_v3\node_modules\express\lib\router\route.js:216:15)
+    at proto.<computed> [as get] (C:\Users\Administrator\Desktop\currency_exchange_v3\node_modules\express\lib\router\index.js:521:19)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js:6:8)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+2025-07-23 15:40:32 [ERROR]: uncaughtException: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:41:06 [ERROR]: uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\Administrator\Desktop\currency_exchange_v3\node_modules\express\lib\router\route.js:216:15)
+    at proto.<computed> [as get] (C:\Users\Administrator\Desktop\currency_exchange_v3\node_modules\express\lib\router\index.js:521:19)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js:6:8)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\Administrator\Desktop\currency_exchange_v3\node_modules\express\lib\router\route.js:216:15)
+    at proto.<computed> [as get] (C:\Users\Administrator\Desktop\currency_exchange_v3\node_modules\express\lib\router\index.js:521:19)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js:6:8)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+2025-07-23 15:41:32 [ERROR]: uncaughtException: UserController is not defined
+ReferenceError: UserController is not defined
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js:6:17)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js:18:21)
+ReferenceError: UserController is not defined
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js:6:17)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js:18:21)
+2025-07-23 15:43:13 [ERROR]: uncaughtException: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:43:28 [ERROR]: uncaughtException: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:43:44 [ERROR]: uncaughtException: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../models/userModel'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:44:34 [ERROR]: uncaughtException: Cannot find module '../db'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\models\User.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../db'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\models\User.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\models\User.js:1:12)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../db'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\models\User.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\models\User.js:1:12)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:44:43 [ERROR]: uncaughtException: Cannot find module '../db'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\models\User.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../db'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\models\User.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\models\User.js:1:12)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../db'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\models\User.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\models\User.js:1:12)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-23 15:45:02 [ERROR]: uncaughtException: Cannot find module '../db'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\models\User.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module '../db'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\models\User.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\models\User.js:1:12)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+Error: Cannot find module '../db'
+Require stack:
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\models\User.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\usersRoutes.js
+- C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\models\User.js:1:12)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-07-24 03:03:03 [ERROR]: uncaughtException: userController is not defined
+ReferenceError: userController is not defined
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\userRoutes.js:13:28)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js:18:20)
+ReferenceError: userController is not defined
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\userRoutes.js:13:28)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js:18:20)
+2025-07-24 03:03:33 [ERROR]: uncaughtException: userController is not defined
+ReferenceError: userController is not defined
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\userRoutes.js:13:28)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js:18:20)
+ReferenceError: userController is not defined
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\routes\userRoutes.js:13:28)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\currency_exchange_v3\src\app.js:18:20)

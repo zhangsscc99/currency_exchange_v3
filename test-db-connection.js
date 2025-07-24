@@ -5,7 +5,7 @@ async function testConnection() {
   const config = {
     host: process.env.DB_HOST || 'localhost',
     user: process.env.DB_USER || 'root', 
-    password: process.env.DB_PASSWORD || '',
+    password: process.env.DB_PASSWORD || 'n3u3da!',
     database: process.env.DB_NAME || 'exchange',
     port: process.env.DB_PORT || 3306
   };

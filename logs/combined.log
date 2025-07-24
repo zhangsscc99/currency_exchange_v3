@@ -10,3 +10,216 @@
 2025-07-23 16:43:22 [ERROR]: 数据库连接失败:
 2025-07-23 16:43:32 [INFO]: Swagger文档已启用: /api-docs
 2025-07-23 16:43:32 [ERROR]: 数据库连接失败:
+2025-07-23 08:55:31 [INFO]: Swagger文档已启用: /api-docs
+2025-07-23 08:55:31 [ERROR]: 数据库连接失败:
+2025-07-23 08:57:00 [INFO]: Swagger文档已启用: /api-docs
+2025-07-23 09:52:34 [INFO]: Swagger文档已启用: /api-docs
+2025-07-23 09:52:34 [ERROR]: 数据库连接失败:
+2025-07-23 14:48:14 [INFO]: Swagger文档已启用: /api-docs
+2025-07-23 14:48:14 [ERROR]: 数据库连接失败:
+2025-07-23 14:50:48 [INFO]: Swagger文档已启用: /api-docs
+2025-07-23 14:50:48 [INFO]: 数据库连接成功
+2025-07-23 14:50:48 [INFO]: 服务器运行在端口 3000
+2025-07-23 14:50:48 [INFO]: 环境: development
+2025-07-23 14:50:48 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-23 14:50:48 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-23 14:53:40 [INFO]: GET / - 200 - 11ms
+2025-07-23 14:53:41 [WARN]: 404错误: GET /favicon.ico
+2025-07-23 14:53:41 [INFO]: GET /favicon.ico - 404 - 2ms
+2025-07-23 14:55:20 [WARN]: 404错误: GET /users?name=john_doe
+2025-07-23 14:55:20 [INFO]: GET /users?name=john_doe - 404 - 2ms
+2025-07-23 14:59:57 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-23 15:28:18 [INFO]: Swagger文档已启用: /api-docs
+2025-07-23 15:28:18 [INFO]: 数据库连接成功
+2025-07-23 15:28:18 [INFO]: 服务器运行在端口 3000
+2025-07-23 15:28:18 [INFO]: 环境: development
+2025-07-23 15:28:18 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-23 15:28:18 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-23 15:28:51 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-23 15:36:55 [INFO]: Swagger文档已启用: /api-docs
+2025-07-23 15:36:55 [INFO]: 数据库连接成功
+2025-07-23 15:36:55 [INFO]: 服务器运行在端口 3000
+2025-07-23 15:36:55 [INFO]: 环境: development
+2025-07-23 15:36:55 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-23 15:36:55 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-23 15:36:57 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-23 15:37:46 [INFO]: Swagger文档已启用: /api-docs
+2025-07-23 15:37:46 [INFO]: 数据库连接成功
+2025-07-23 15:37:46 [INFO]: 服务器运行在端口 3000
+2025-07-23 15:37:46 [INFO]: 环境: development
+2025-07-23 15:37:46 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-23 15:37:46 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-23 15:37:50 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-23 15:38:28 [INFO]: Swagger文档已启用: /api-docs
+2025-07-23 15:38:28 [INFO]: 数据库连接成功
+2025-07-23 15:38:28 [INFO]: 服务器运行在端口 3000
+2025-07-23 15:38:28 [INFO]: 环境: development
+2025-07-23 15:38:28 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-23 15:38:28 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-23 15:38:36 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-23 15:41:50 [INFO]: Swagger文档已启用: /api-docs
+2025-07-23 15:41:51 [INFO]: 数据库连接成功
+2025-07-23 15:41:51 [INFO]: 服务器运行在端口 3000
+2025-07-23 15:41:51 [INFO]: 环境: development
+2025-07-23 15:41:51 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-23 15:41:51 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-23 15:42:41 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-23 15:51:23 [INFO]: Swagger文档已启用: /api-docs
+2025-07-23 15:51:23 [INFO]: 数据库连接成功
+2025-07-23 15:51:23 [INFO]: 服务器运行在端口 3000
+2025-07-23 15:51:23 [INFO]: 环境: development
+2025-07-23 15:51:23 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-23 15:51:23 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-23 15:51:43 [WARN]: 404错误: GET /users?name=john_doe
+2025-07-23 15:51:43 [INFO]: GET /users?name=john_doe - 404 - 10ms
+2025-07-23 15:52:41 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-23 15:52:41 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-23 15:52:46 [INFO]: Swagger文档已启用: /api-docs
+2025-07-23 15:52:46 [INFO]: 数据库连接成功
+2025-07-23 15:52:46 [INFO]: 服务器运行在端口 3000
+2025-07-23 15:52:46 [INFO]: 环境: development
+2025-07-23 15:52:46 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-23 15:52:46 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-23 15:52:50 [INFO]: HTTP服务器已关闭
+2025-07-23 15:52:50 [WARN]: 404错误: GET /users?name=john_doe
+2025-07-23 15:52:50 [INFO]: GET /users?name=john_doe - 404 - 20ms
+2025-07-23 15:53:19 [INFO]: GET /api/v1/users?name=john_doe - 200 - 10ms
+2025-07-23 15:59:23 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-23 16:13:18 [INFO]: Swagger文档已启用: /api-docs
+2025-07-23 16:13:18 [INFO]: 数据库连接成功
+2025-07-23 16:13:18 [INFO]: 服务器运行在端口 3000
+2025-07-23 16:13:18 [INFO]: 环境: development
+2025-07-23 16:13:18 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-23 16:13:18 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-23 16:13:24 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-24 01:51:49 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 01:51:49 [INFO]: 数据库连接成功
+2025-07-24 01:51:49 [INFO]: 服务器运行在端口 3000
+2025-07-24 01:51:49 [INFO]: 环境: development
+2025-07-24 01:51:49 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 01:51:49 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 01:53:29 [INFO]: GET /api/v1/users?name=john_doe - 304 - 19ms
+2025-07-24 01:53:29 [WARN]: 404错误: GET /favicon.ico
+2025-07-24 01:53:29 [INFO]: GET /favicon.ico - 404 - 5ms
+2025-07-24 01:53:47 [WARN]: 404错误: GET /api/v1/users/1
+2025-07-24 01:53:47 [INFO]: GET /api/v1/users/1 - 404 - 2ms
+2025-07-24 01:55:42 [INFO]: GET /api-docs - 301 - 35ms
+2025-07-24 01:55:42 [INFO]: GET /api-docs/ - 200 - 54ms
+2025-07-24 01:55:42 [INFO]: GET /api-docs/swagger-ui-init.js - 200 - 9ms
+2025-07-24 01:55:42 [INFO]: GET /api-docs/swagger-ui.css - 200 - 37ms
+2025-07-24 01:55:43 [INFO]: GET /api-docs/swagger-ui-standalone-preset.js - 200 - 90ms
+2025-07-24 01:55:43 [INFO]: GET /api-docs/swagger-ui-bundle.js - 200 - 202ms
+2025-07-24 01:55:43 [INFO]: GET /api-docs/favicon-32x32.png - 200 - 12ms
+2025-07-24 01:58:01 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-24 01:58:34 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 01:58:34 [INFO]: 数据库连接成功
+2025-07-24 01:58:34 [INFO]: 服务器运行在端口 3000
+2025-07-24 01:58:34 [INFO]: 环境: development
+2025-07-24 01:58:34 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 01:58:34 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 01:58:39 [INFO]: GET /api-docs/ - 304 - 9ms
+2025-07-24 01:58:40 [INFO]: GET /api-docs/swagger-ui.css - 304 - 6ms
+2025-07-24 01:58:40 [INFO]: GET /api-docs/swagger-ui-init.js - 304 - 2ms
+2025-07-24 01:58:40 [INFO]: GET /api-docs/swagger-ui-bundle.js - 304 - 11ms
+2025-07-24 01:58:40 [INFO]: GET /api-docs/swagger-ui-standalone-preset.js - 304 - 10ms
+2025-07-24 01:58:40 [INFO]: GET /api-docs/favicon-32x32.png - 304 - 1ms
+2025-07-24 02:00:21 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-24 02:00:25 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 02:00:25 [INFO]: 数据库连接成功
+2025-07-24 02:00:25 [INFO]: 服务器运行在端口 3000
+2025-07-24 02:00:25 [INFO]: 环境: development
+2025-07-24 02:00:25 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 02:00:25 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 02:00:30 [INFO]: GET /api-docs/ - 304 - 9ms
+2025-07-24 02:00:30 [INFO]: GET /api-docs/swagger-ui-init.js - 304 - 2ms
+2025-07-24 02:00:30 [INFO]: GET /api-docs/swagger-ui-bundle.js - 304 - 23ms
+2025-07-24 02:00:30 [INFO]: GET /api-docs/swagger-ui.css - 304 - 31ms
+2025-07-24 02:00:30 [INFO]: GET /api-docs/swagger-ui-standalone-preset.js - 304 - 30ms
+2025-07-24 02:00:30 [INFO]: GET /api-docs/favicon-32x32.png - 304 - 1ms
+2025-07-24 02:00:52 [INFO]: GET /api-docs/ - 304 - 2ms
+2025-07-24 02:00:52 [INFO]: GET /api-docs/swagger-ui.css - 304 - 2ms
+2025-07-24 02:00:52 [INFO]: GET /api-docs/swagger-ui-bundle.js - 304 - 2ms
+2025-07-24 02:00:52 [INFO]: GET /api-docs/swagger-ui-init.js - 304 - 2ms
+2025-07-24 02:00:52 [INFO]: GET /api-docs/swagger-ui-standalone-preset.js - 304 - 10ms
+2025-07-24 02:00:52 [INFO]: GET /api-docs/favicon-32x32.png - 304 - 1ms
+2025-07-24 02:00:55 [INFO]: GET /api-docs/ - 304 - 1ms
+2025-07-24 02:00:55 [INFO]: GET /api-docs/swagger-ui.css - 304 - 1ms
+2025-07-24 02:00:55 [INFO]: GET /api-docs/swagger-ui-bundle.js - 304 - 1ms
+2025-07-24 02:00:55 [INFO]: GET /api-docs/swagger-ui-init.js - 304 - 1ms
+2025-07-24 02:00:55 [INFO]: GET /api-docs/swagger-ui-standalone-preset.js - 304 - 3ms
+2025-07-24 02:00:55 [INFO]: GET /api-docs/favicon-32x32.png - 304 - 1ms
+2025-07-24 02:01:22 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-24 02:01:27 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 02:01:27 [INFO]: 数据库连接成功
+2025-07-24 02:01:27 [INFO]: 服务器运行在端口 3000
+2025-07-24 02:01:27 [INFO]: 环境: development
+2025-07-24 02:01:27 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 02:01:27 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 02:01:38 [INFO]: GET /api-docs/ - 304 - 10ms
+2025-07-24 02:01:38 [INFO]: GET /api-docs/swagger-ui-init.js - 304 - 2ms
+2025-07-24 02:01:38 [INFO]: GET /api-docs/swagger-ui.css - 304 - 18ms
+2025-07-24 02:01:38 [INFO]: GET /api-docs/swagger-ui-bundle.js - 304 - 21ms
+2025-07-24 02:01:38 [INFO]: GET /api-docs/swagger-ui-standalone-preset.js - 304 - 22ms
+2025-07-24 02:09:13 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-24 02:09:17 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 02:09:17 [INFO]: 数据库连接成功
+2025-07-24 02:09:17 [INFO]: 服务器运行在端口 3000
+2025-07-24 02:09:17 [INFO]: 环境: development
+2025-07-24 02:09:17 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 02:09:17 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 02:09:28 [INFO]: GET /api-docs/ - 304 - 8ms
+2025-07-24 02:09:28 [INFO]: GET /api-docs/swagger-ui.css - 304 - 5ms
+2025-07-24 02:09:28 [INFO]: GET /api-docs/swagger-ui-bundle.js - 304 - 9ms
+2025-07-24 02:09:28 [INFO]: GET /api-docs/swagger-ui-standalone-preset.js - 304 - 16ms
+2025-07-24 02:09:28 [INFO]: GET /api-docs/swagger-ui-init.js - 200 - 22ms
+2025-07-24 02:09:28 [INFO]: GET /api-docs/favicon-32x32.png - 304 - 1ms
+2025-07-24 02:12:00 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-24 02:12:05 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 02:12:05 [INFO]: 数据库连接成功
+2025-07-24 02:12:05 [INFO]: 服务器运行在端口 3000
+2025-07-24 02:12:05 [INFO]: 环境: development
+2025-07-24 02:12:05 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 02:12:05 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 02:12:19 [INFO]: GET /api-docs/ - 304 - 11ms
+2025-07-24 02:12:19 [INFO]: GET /api-docs/swagger-ui.css - 304 - 3ms
+2025-07-24 02:12:20 [INFO]: GET /api-docs/swagger-ui-bundle.js - 304 - 1ms
+2025-07-24 02:12:20 [INFO]: GET /api-docs/swagger-ui-standalone-preset.js - 304 - 7ms
+2025-07-24 02:12:20 [INFO]: GET /api-docs/swagger-ui-init.js - 200 - 16ms
+2025-07-24 02:12:20 [INFO]: GET /api-docs/favicon-32x32.png - 304 - 1ms
+2025-07-24 02:14:18 [INFO]: GET /api-docs/ - 304 - 2ms
+2025-07-24 02:14:18 [INFO]: GET /api-docs/swagger-ui.css - 304 - 2ms
+2025-07-24 02:14:18 [INFO]: GET /api-docs/swagger-ui-bundle.js - 304 - 3ms
+2025-07-24 02:14:18 [INFO]: GET /api-docs/swagger-ui-init.js - 304 - 1ms
+2025-07-24 02:14:18 [INFO]: GET /api-docs/swagger-ui-standalone-preset.js - 304 - 4ms
+2025-07-24 02:14:18 [INFO]: GET /api-docs/favicon-32x32.png - 304 - 7ms
+2025-07-24 02:16:20 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-24 02:16:24 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 02:16:24 [INFO]: 数据库连接成功
+2025-07-24 02:16:24 [INFO]: 服务器运行在端口 3000
+2025-07-24 02:16:24 [INFO]: 环境: development
+2025-07-24 02:16:24 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 02:16:24 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 02:16:29 [INFO]: GET /api-docs/ - 304 - 9ms
+2025-07-24 02:16:29 [INFO]: GET /api-docs/swagger-ui.css - 304 - 15ms
+2025-07-24 02:16:29 [INFO]: GET /api-docs/swagger-ui-standalone-preset.js - 304 - 10ms
+2025-07-24 02:16:29 [INFO]: GET /api-docs/swagger-ui-bundle.js - 304 - 20ms
+2025-07-24 02:16:29 [INFO]: GET /api-docs/swagger-ui-init.js - 200 - 9ms
+2025-07-24 02:16:29 [INFO]: GET /api-docs/favicon-32x32.png - 304 - 1ms
+2025-07-24 02:16:51 [INFO]: GET /api/v1/users/searchUser?name=john_doe - 200 - 13ms
+2025-07-24 02:17:24 [WARN]: 404错误: DELETE /api/v1/users/1
+2025-07-24 02:17:24 [INFO]: DELETE /api/v1/users/1 - 404 - 3ms
+2025-07-24 02:18:45 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-24 02:18:49 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 02:18:49 [INFO]: 数据库连接成功
+2025-07-24 02:18:49 [INFO]: 服务器运行在端口 3000
+2025-07-24 02:18:49 [INFO]: 环境: development
+2025-07-24 02:18:49 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 02:18:49 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 02:18:50 [INFO]: GET /api-docs/ - 304 - 8ms
+2025-07-24 02:18:50 [INFO]: GET /api-docs/swagger-ui.css - 304 - 4ms
+2025-07-24 02:18:50 [INFO]: GET /api-docs/swagger-ui-bundle.js - 304 - 4ms
+2025-07-24 02:18:50 [INFO]: GET /api-docs/swagger-ui-init.js - 304 - 1ms
+2025-07-24 02:18:50 [INFO]: GET /api-docs/swagger-ui-standalone-preset.js - 304 - 33ms
+2025-07-24 02:18:51 [INFO]: GET /api-docs/favicon-32x32.png - 304 - 2ms
+2025-07-24 02:18:56 [INFO]: DELETE /api/v1/users/1 - 200 - 17ms
+2025-07-24 02:19:23 [INFO]: 收到 SIGINT 信号，开始优雅关闭...

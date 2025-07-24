@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Currency API Tester</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    input { margin: 5px; padding: 5px; }
+    button { margin: 10px 0; padding: 5px 10px; }
+    pre { background: #f4f4f4; padding: 10px; }
+  </style>
+</head>
+<body>
+
+  <h2>🌐 Currency API Tester</h2>
+
+  <h3>🔍 获取所有货币（GET /currency）</h3>
+  <button onclick="fetchCurrencies()">获取所有货币</button>
+  <pre id="currencyList">点击按钮加载数据...</pre>
+
+  <hr>
+
+  <h3>➕ 添加新货币（POST /currency）</h3>
+  <input type="text" id="currency_name" placeholder="Currency Name" />
+  <input type="text" id="currency_symbol" placeholder="Currency Symbol" />
+  <br>
+  <button onclick="addCurrency()">添加货币</button>
+  <pre id="postResult"></pre>
+
+  <script>
+    const API_BASE = 'http://localhost:3000';
+
+    function fetchCurrencies() {
+      fetch(`${API_BASE}/currency`)
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById('currencyList').textContent = JSON.stringify(data, null, 2);
+        })
+        .catch(err => {
+          document.getElementById('currencyList').textContent = '请求失败：' + err;
+        });
+    }
+
+    function addCurrency() {
+      const name = document.getElementById('currency_name').value.trim();
+      const symbol = document.getElementById('currency_symbol').value.trim();
+
+      if (!name || !symbol) {
+        alert('请输入完整的货币名称和缩写');
+        return;
+      }
+
+      fetch(`${API_BASE}/currency`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ currency_name: name, currency_symbol: symbol })
+      })
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('postResult').textContent = JSON.stringify(data, null, 2);
+        fetchCurrencies(); // 添加后刷新列表
+      })
+      .catch(err => {
+        document.getElementById('postResult').textContent = '请求失败：' + err;
+      });
+    }
+  </script>
+
+</body>
+</html>

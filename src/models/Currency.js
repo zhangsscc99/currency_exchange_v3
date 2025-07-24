@@ -24,6 +24,27 @@ class Currency {
     }
   }
 
+  // 创建新货币
+  static async create(currencyData) {
+    try {
+      const query = 'INSERT INTO currency (currency_name, currency_symbol) VALUES (?, ?)';
+      const params = [currencyData.currency_name, currencyData.currency_symbol];
+      
+      logger.info(`创建货币查询: ${query}`, { params });
+      
+      const result = await executeQuery(query, params);
+      const newId = result.insertId;
+      
+      logger.info(`成功创建货币 - ID: ${newId}`);
+      
+      // 返回新创建的货币
+      return await Currency.findById(newId);
+    } catch (error) {
+      logger.error('创建货币失败:', error.message);
+      throw error;
+    }
+  }
+
   // 根据ID获取货币
   static async findById(id) {
     try {

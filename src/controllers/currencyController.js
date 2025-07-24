@@ -51,6 +51,33 @@ class CurrencyController {
     });
   });
 
+  // 创建新货币 - POST方法
+  static createCurrency = asyncHandler(async (req, res) => {
+    const { currency_name, currency_symbol } = req.body;
+
+    // 验证必填字段
+    if (!currency_name || !currency_symbol) {
+      return res.status(400).json({ 
+        error: '缺少必填字段：currency_name 和 currency_symbol 都是必需的' 
+      });
+    }
+
+    // 调用服务层创建货币
+    const newCurrency = await CurrencyService.createCurrency({
+      currency_name: currency_name.trim(),
+      currency_symbol: currency_symbol.trim()
+    });
+
+    logger.info(`用户创建了新货币: ${JSON.stringify(newCurrency)}`);
+    
+    res.status(201).json({
+      currency_id: newCurrency.currency_id,
+      currency_name: newCurrency.currency_name,
+      currency_symbol: newCurrency.currency_symbol,
+      message: '货币创建成功'
+    });
+  });
+
   // 更新货币 - 简化返回格式
   static updateCurrency = asyncHandler(async (req, res) => {
     const { id } = req.params;

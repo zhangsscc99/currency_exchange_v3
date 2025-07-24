@@ -25,6 +25,70 @@ const dbConfigWithoutDatabase = {
 // 创建连接池
 let pool;
 
+// 移除currency_symbol的UNIQUE约束
+const removeCurrencySymbolUniqueConstraint = async (connection) => {
+  try {
+    logger.info('检查currency_symbol的UNIQUE索引...');
+    
+    // 查询currency表的所有索引，找到currency_symbol的唯一索引
+    const [indexes] = await connection.execute(`
+      SELECT INDEX_NAME, NON_UNIQUE, COLUMN_NAME
+      FROM information_schema.STATISTICS 
+      WHERE TABLE_SCHEMA = ? 
+        AND TABLE_NAME = 'currency' 
+        AND COLUMN_NAME = 'currency_symbol'
+        AND INDEX_NAME != 'PRIMARY'
+    `, [process.env.DB_NAME || 'exchange']);
+    
+    logger.info(`找到currency_symbol的索引: ${JSON.stringify(indexes)}`);
+    
+    if (indexes.length > 0) {
+      for (const index of indexes) {
+        const { INDEX_NAME, NON_UNIQUE } = index;
+        
+        // NON_UNIQUE = 0 表示这是唯一索引
+        if (NON_UNIQUE === 0) {
+          logger.info(`发现currency_symbol的UNIQUE索引: ${INDEX_NAME}，正在移除...`);
+          
+          try {
+            await connection.execute(`ALTER TABLE currency DROP INDEX \`${INDEX_NAME}\``);
+            logger.info(`✅ 成功移除currency_symbol的UNIQUE索引: ${INDEX_NAME}`);
+          } catch (dropError) {
+            if (dropError.code === 'ER_CANT_DROP_FIELD_OR_KEY') {
+              logger.info(`索引 ${INDEX_NAME} 不存在或已被移除`);
+            } else {
+              logger.warn(`移除索引失败: ${dropError.message}`);
+            }
+          }
+        } else {
+          logger.info(`索引 ${INDEX_NAME} 不是唯一索引，保留`);
+        }
+      }
+    } else {
+      logger.info('✅ currency_symbol字段没有UNIQUE索引，符合预期');
+    }
+    
+    // 验证移除结果
+    const [finalIndexes] = await connection.execute(`
+      SELECT INDEX_NAME, NON_UNIQUE 
+      FROM information_schema.STATISTICS 
+      WHERE TABLE_SCHEMA = ? 
+        AND TABLE_NAME = 'currency' 
+        AND COLUMN_NAME = 'currency_symbol'
+        AND NON_UNIQUE = 0
+    `, [process.env.DB_NAME || 'exchange']);
+    
+    if (finalIndexes.length === 0) {
+      logger.info('🎉 验证成功：currency_symbol字段已无UNIQUE约束，现在支持符号重复！');
+    } else {
+      logger.warn('⚠️  仍然存在UNIQUE索引:', finalIndexes);
+    }
+    
+  } catch (error) {
+    logger.error(`检查/移除currency_symbol索引时出错: ${error.message}`);
+  }
+};
+
 // 初始化数据库
 const initializeDatabase = async () => {
   let connection;
@@ -66,7 +130,7 @@ const initializeDatabase = async () => {
       CREATE TABLE IF NOT EXISTS currency (
         currency_id INT PRIMARY KEY AUTO_INCREMENT,
         currency_name VARCHAR(50) NOT NULL UNIQUE,
-        currency_symbol VARCHAR(10) NOT NULL UNIQUE,
+        currency_symbol VARCHAR(10) NOT NULL,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -74,6 +138,9 @@ const initializeDatabase = async () => {
 
     await connection.execute(createCurrencyTable);
     logger.info('✅ 货币表创建成功');
+
+    // 检查并移除currency_symbol的UNIQUE约束（允许多个货币使用相同符号，如￥）
+    await removeCurrencySymbolUniqueConstraint(connection);
 
     // 检查货币表是否为空
     logger.info('检查现有货币数据...');
@@ -89,8 +156,8 @@ const initializeDatabase = async () => {
         ['美元', '$'],
         ['欧元', '€'],
         ['英镑', '£'],
-        ['日元', '¥'],
-        ['人民币', 'CNY']
+        ['日元', '￥'],
+        ['人民币', '￥']  // 现在人民币和日元都可以使用￥符号了
       ];
 
       for (const [name, symbol] of currencies) {
@@ -169,6 +236,11 @@ const testConnection = async () => {
     
     const connection = await pool.getConnection();
     logger.info('数据库连接成功');
+    
+    // 每次启动都检查并移除currency_symbol的UNIQUE约束
+    logger.info('启动时检查currency_symbol约束...');
+    await removeCurrencySymbolUniqueConstraint(connection);
+    
     connection.release();
     return true;
   } catch (error) {
@@ -187,6 +259,10 @@ const testConnection = async () => {
         try {
           const connection = await pool.getConnection();
           logger.info('数据库连接成功（初始化后）');
+          
+          // 初始化后也要检查约束
+          await removeCurrencySymbolUniqueConstraint(connection);
+          
           connection.release();
           return true;
         } catch (retryError) {

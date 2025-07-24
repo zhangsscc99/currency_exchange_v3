@@ -1,0 +1,139 @@
+2025-07-24 11:22:05 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 11:22:05 [INFO]: 数据库连接池创建成功
+2025-07-24 11:22:05 [INFO]: 数据库连接成功
+2025-07-24 11:22:05 [INFO]: 服务器运行在端口 3000
+2025-07-24 11:22:05 [INFO]: 环境: development
+2025-07-24 11:22:05 [INFO]: 前端页面: http://localhost:3000
+2025-07-24 11:22:05 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 11:22:05 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 11:26:02 [INFO]: 获取所有货币列表
+2025-07-24 11:26:02 [INFO]: 执行查询: SELECT * FROM currency ORDER BY currency_id ASC
+2025-07-24 11:26:02 [INFO]: 成功获取 3 条货币记录
+2025-07-24 11:26:02 [INFO]: 成功获取 3 条货币记录
+2025-07-24 11:26:02 [INFO]: GET /currencies - 304 - 11ms
+2025-07-24 11:26:20 [WARN]: 404错误: POST /currencies
+2025-07-24 11:26:20 [INFO]: POST /currencies - 404 - 16ms
+2025-07-24 11:29:45 [WARN]: 404错误: POST /currencies
+2025-07-24 11:29:45 [INFO]: POST /currencies - 404 - 8ms
+2025-07-24 11:29:51 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-24 11:29:53 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 11:29:53 [INFO]: 数据库连接池创建成功
+2025-07-24 11:29:53 [INFO]: 数据库连接成功
+2025-07-24 11:29:53 [INFO]: 服务器运行在端口 3000
+2025-07-24 11:29:53 [INFO]: 环境: development
+2025-07-24 11:29:53 [INFO]: 前端页面: http://localhost:3000
+2025-07-24 11:29:53 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 11:29:53 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 11:30:06 [INFO]: 创建新货币: {"currency_name":"美元","currency_symbol":"$"}
+2025-07-24 11:30:06 [INFO]: 创建货币查询: INSERT INTO currency (currency_name, currency_symbol) VALUES (?, ?)
+2025-07-24 11:30:06 [INFO]: 成功创建货币 - ID: 4
+2025-07-24 11:30:06 [INFO]: 执行查询: SELECT * FROM currency WHERE currency_id = ?
+2025-07-24 11:30:06 [INFO]: 成功获取货币 - ID: 4
+2025-07-24 11:30:06 [INFO]: 成功创建货币 - ID: 4, 名称: 美元
+2025-07-24 11:30:06 [INFO]: 用户创建了新货币: {"id":4,"name":"美元","symbol":"$"}
+2025-07-24 11:30:06 [INFO]: POST /currencies - 201 - 24ms
+2025-07-24 11:30:07 [INFO]: 获取所有货币列表
+2025-07-24 11:30:07 [INFO]: 执行查询: SELECT * FROM currency ORDER BY currency_id ASC
+2025-07-24 11:30:07 [INFO]: 成功获取 4 条货币记录
+2025-07-24 11:30:07 [INFO]: 成功获取 4 条货币记录
+2025-07-24 11:30:07 [INFO]: GET /currencies - 200 - 5ms
+2025-07-24 11:30:34 [INFO]: PUT /currencies/1 - 400 - 4ms
+2025-07-24 11:30:51 [INFO]: POST /currencies - 400 - 5ms
+2025-07-24 11:30:54 [INFO]: POST /currencies - 400 - 3ms
+2025-07-24 11:30:55 [INFO]: POST /currencies - 400 - 2ms
+2025-07-24 11:30:56 [INFO]: POST /currencies - 400 - 2ms
+2025-07-24 11:31:04 [INFO]: 创建新货币: {"currency_name":"新货币","currency_symbol":"new_curren"}
+2025-07-24 11:31:04 [INFO]: 创建货币查询: INSERT INTO currency (currency_name, currency_symbol) VALUES (?, ?)
+2025-07-24 11:31:04 [INFO]: 成功创建货币 - ID: 5
+2025-07-24 11:31:04 [INFO]: 执行查询: SELECT * FROM currency WHERE currency_id = ?
+2025-07-24 11:31:04 [INFO]: 成功获取货币 - ID: 5
+2025-07-24 11:31:04 [INFO]: 成功创建货币 - ID: 5, 名称: 新货币
+2025-07-24 11:31:04 [INFO]: 用户创建了新货币: {"id":5,"name":"新货币","symbol":"new_curren"}
+2025-07-24 11:31:04 [INFO]: POST /currencies - 201 - 23ms
+2025-07-24 11:31:04 [INFO]: 获取所有货币列表
+2025-07-24 11:31:04 [INFO]: 执行查询: SELECT * FROM currency ORDER BY currency_id ASC
+2025-07-24 11:31:04 [INFO]: 成功获取 5 条货币记录
+2025-07-24 11:31:04 [INFO]: 成功获取 5 条货币记录
+2025-07-24 11:31:04 [INFO]: GET /currencies - 200 - 7ms
+2025-07-24 11:37:58 [INFO]: 创建新货币: {"currency_name":"日元","currency_symbol":"￥"}
+2025-07-24 11:37:59 [INFO]: 创建货币查询: INSERT INTO currency (currency_name, currency_symbol) VALUES (?, ?)
+2025-07-24 11:37:59 [INFO]: 成功创建货币 - ID: 6
+2025-07-24 11:37:59 [INFO]: 执行查询: SELECT * FROM currency WHERE currency_id = ?
+2025-07-24 11:37:59 [INFO]: 成功获取货币 - ID: 6
+2025-07-24 11:37:59 [INFO]: 成功创建货币 - ID: 6, 名称: 日元
+2025-07-24 11:37:59 [INFO]: 用户创建了新货币: {"id":6,"name":"日元","symbol":"￥"}
+2025-07-24 11:37:59 [INFO]: POST /currencies - 201 - 885ms
+2025-07-24 11:38:00 [INFO]: 获取所有货币列表
+2025-07-24 11:38:00 [INFO]: 执行查询: SELECT * FROM currency ORDER BY currency_id ASC
+2025-07-24 11:38:00 [INFO]: 成功获取 6 条货币记录
+2025-07-24 11:38:00 [INFO]: 成功获取 6 条货币记录
+2025-07-24 11:38:00 [INFO]: GET /currencies - 200 - 53ms
+2025-07-24 11:38:11 [INFO]: POST /currencies - 400 - 7ms
+2025-07-24 11:38:20 [INFO]: POST /currencies - 400 - 6ms
+2025-07-24 11:38:27 [INFO]: POST /currencies - 400 - 8ms
+2025-07-24 11:38:32 [INFO]: POST /currencies - 400 - 4ms
+2025-07-24 11:38:37 [INFO]: POST /currencies - 400 - 8ms
+2025-07-24 11:40:22 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-24 11:40:24 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 11:40:24 [INFO]: 数据库连接池创建成功
+2025-07-24 11:40:24 [INFO]: 数据库连接成功
+2025-07-24 11:40:24 [INFO]: 服务器运行在端口 3000
+2025-07-24 11:40:24 [INFO]: 环境: development
+2025-07-24 11:40:24 [INFO]: 前端页面: http://localhost:3000
+2025-07-24 11:40:24 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 11:40:24 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 11:40:33 [INFO]: POST /currencies - 400 - 14ms
+2025-07-24 11:44:25 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-24 11:44:26 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 11:44:26 [INFO]: 数据库连接池创建成功
+2025-07-24 11:44:26 [INFO]: 数据库连接成功
+2025-07-24 11:44:26 [INFO]: 服务器运行在端口 3000
+2025-07-24 11:44:26 [INFO]: 环境: development
+2025-07-24 11:44:26 [INFO]: 前端页面: http://localhost:3000
+2025-07-24 11:44:26 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 11:44:26 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 11:44:30 [INFO]: POST /currencies - 400 - 12ms
+2025-07-24 11:45:01 [INFO]: POST /currencies - 400 - 3ms
+2025-07-24 11:45:15 [INFO]: 创建新货币: {"currency_name":"人民币二","currency_symbol":"￥"}
+2025-07-24 11:45:16 [INFO]: 允许货币符号重复: ￥
+2025-07-24 11:45:16 [INFO]: 创建货币查询: INSERT INTO currency (currency_name, currency_symbol) VALUES (?, ?)
+2025-07-24 11:45:17 [ERROR]: 数据库查询错误:
+2025-07-24 11:45:17 [ERROR]: 创建货币失败:
+2025-07-24 11:45:17 [ERROR]: 创建货币失败:
+2025-07-24 11:45:17 [ERROR]: 错误: Duplicate entry '￥' for key 'currency.currency_symbol'
+Error: Duplicate entry '￥' for key 'currency.currency_symbol'
+    at PromisePool.execute (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at executeQuery (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\config\database.js:252:34)
+    at Currency.create (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\Currency.js:35:28)
+    at CurrencyService.createCurrency (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:20:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:66:25
+2025-07-24 11:45:17 [INFO]: POST /currencies - 409 - 1769ms
+2025-07-24 11:46:39 [INFO]: 创建新货币: {"currency_name":"人民币二","currency_symbol":"￥"}
+2025-07-24 11:46:39 [INFO]: 允许货币符号重复: ￥
+2025-07-24 11:46:39 [INFO]: 创建货币查询: INSERT INTO currency (currency_name, currency_symbol) VALUES (?, ?)
+2025-07-24 11:46:39 [INFO]: 成功创建货币 - ID: 8
+2025-07-24 11:46:39 [INFO]: 执行查询: SELECT * FROM currency WHERE currency_id = ?
+2025-07-24 11:46:39 [INFO]: 成功获取货币 - ID: 8
+2025-07-24 11:46:39 [INFO]: 成功创建货币 - ID: 8, 名称: 人民币二, 符号: ￥
+2025-07-24 11:46:39 [INFO]: 用户创建了新货币: {"id":8,"name":"人民币二","symbol":"￥"}
+2025-07-24 11:46:39 [INFO]: POST /currencies - 201 - 18ms
+2025-07-24 11:46:39 [INFO]: 获取所有货币列表
+2025-07-24 11:46:39 [INFO]: 执行查询: SELECT * FROM currency ORDER BY currency_id ASC
+2025-07-24 11:46:39 [INFO]: 成功获取 7 条货币记录
+2025-07-24 11:46:39 [INFO]: 成功获取 7 条货币记录
+2025-07-24 11:46:39 [INFO]: GET /currencies - 200 - 5ms
+2025-07-24 11:48:47 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-24 11:48:49 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 11:48:49 [INFO]: 数据库连接池创建成功
+2025-07-24 11:48:49 [INFO]: 数据库连接成功
+2025-07-24 11:48:49 [INFO]: 启动时检查currency_symbol约束...
+2025-07-24 11:48:49 [INFO]: 检查currency_symbol的UNIQUE索引...
+2025-07-24 11:48:49 [INFO]: 找到currency_symbol的索引: []
+2025-07-24 11:48:49 [INFO]: ✅ currency_symbol字段没有UNIQUE索引，符合预期
+2025-07-24 11:48:49 [INFO]: 🎉 验证成功：currency_symbol字段已无UNIQUE约束，现在支持符号重复！
+2025-07-24 11:48:49 [INFO]: 服务器运行在端口 3000
+2025-07-24 11:48:49 [INFO]: 环境: development
+2025-07-24 11:48:49 [INFO]: 前端页面: http://localhost:3000
+2025-07-24 11:48:49 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 11:48:49 [INFO]: 健康检查: http://localhost:3000/health

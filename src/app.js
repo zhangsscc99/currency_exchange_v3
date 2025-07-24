@@ -15,7 +15,6 @@ const { errorHandler, notFoundHandler } = require('./middleware/errorHandler');
 
 // 导入路由
 const currencyRoutes = require('./routes/currencyRoutes');
-const userRoutes = require('./routes/userRoutes');
 // 创建Express应用
 const app = express();
 

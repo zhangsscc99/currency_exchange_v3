@@ -2,6 +2,30 @@ const Currency = require('../models/Currency');
 const { logger } = require('../utils/logger');
 
 class CurrencyService {
+  // 创建新货币
+  static async createCurrency(currencyData) {
+    try {
+      logger.info(`创建新货币: ${JSON.stringify(currencyData)}`);
+      
+      // 检查货币名称是否已存在（保留名称唯一性）
+      const nameExists = await Currency.isNameExists(currencyData.currency_name);
+      if (nameExists) {
+        logger.warn(`货币名称已存在: ${currencyData.currency_name}`);
+        throw new Error('货币名称已存在');
+      }
+
+      // 移除货币符号重复性检查 - 允许多个货币使用相同符号（如人民币和日元都用￥）
+      logger.info(`允许货币符号重复: ${currencyData.currency_symbol}`);
+
+      const newCurrency = await Currency.create(currencyData);
+      logger.info(`成功创建货币 - ID: ${newCurrency.currency_id}, 名称: ${newCurrency.currency_name}, 符号: ${newCurrency.currency_symbol}`);
+      return newCurrency;
+    } catch (error) {
+      logger.error('创建货币失败:', error.message);
+      throw error;
+    }
+  }
+
   // 获取所有货币
   static async getAllCurrencies() {
     try {
@@ -46,7 +70,7 @@ class CurrencyService {
         return null;
       }
 
-      // 检查更新的名称是否与其他货币冲突
+      // 检查更新的名称是否与其他货币冲突（保留名称唯一性）
       if (updateData.currency_name) {
         const nameExists = await Currency.isNameExists(updateData.currency_name, id);
         if (nameExists) {
@@ -55,13 +79,9 @@ class CurrencyService {
         }
       }
 
-      // 检查更新的符号是否与其他货币冲突
+      // 移除货币符号重复性检查 - 允许多个货币使用相同符号
       if (updateData.currency_symbol) {
-        const symbolExists = await Currency.isSymbolExists(updateData.currency_symbol, id);
-        if (symbolExists) {
-          logger.warn(`货币符号已存在: ${updateData.currency_symbol}`);
-          throw new Error('货币符号已存在');
-        }
+        logger.info(`允许更新货币符号: ${updateData.currency_symbol} (可重复)`);
       }
 
       const updatedCurrency = await Currency.update(id, updateData);

@@ -455,6 +455,83 @@ paths:
         '500':
           $ref: '#/components/responses/InternalServerError'
 
+  /users/createUser:
+    post:
+      tags:
+        - Users
+      summary: Create a new user
+      description: Add a new user to the system
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateUserRequest'
+      responses:
+        '201':
+          description: User created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  data:
+                    $ref: '#/components/schemas/User'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  /users/updateUser/{id}:
+    put:
+      tags:
+        - Users
+      summary: Update user
+      description: Update an existing user's details
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: User ID
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateUserRequest'
+      responses:
+        '200':
+          description: User updated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  data:
+                    $ref: '#/components/schemas/User'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
 components:
   securitySchemes:
     bearerAuth:
@@ -764,6 +841,38 @@ components:
           items:
             type: string
 
+    CreateUserRequest:
+      type: object
+      properties:
+        user_name:
+          type: string
+          example: "John Doe"
+        user_pwd_hash:
+          type: string
+          example: "hashedpassword123"
+        user_email:
+          type: string
+          format: email
+          example: "johndoe@example.com"
+      required:
+        - user_name
+        - user_pwd_hash
+        - user_email
+
+    UpdateUserRequest:
+      type: object
+      properties:
+        user_name:
+          type: string
+          example: "John Doe"
+        user_pwd_hash:
+          type: string
+          example: "newhashedpassword123"
+        user_email:
+          type: string
+          format: email
+          example: "johndoe@example.com"
+
   responses:
     BadRequest:
       description: Bad request
@@ -828,4 +937,6 @@ tags:
   - name: Currency Conversion
     description: Currency conversion operations
   - name: Authentication
-    description: User authentication operations 
+    description: User authentication operations
+  - name: Users
+    description: User management operations

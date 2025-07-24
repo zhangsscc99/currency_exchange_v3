@@ -847,7 +847,7 @@ components:
         user_name:
           type: string
           example: "John Doe"
-        user_pwd_hash:
+        user_pwd:
           type: string
           example: "hashedpassword123"
         user_email:
@@ -856,7 +856,7 @@ components:
           example: "johndoe@example.com"
       required:
         - user_name
-        - user_pwd_hash
+        - user_pwd
         - user_email
 
     UpdateUserRequest:
@@ -865,7 +865,7 @@ components:
         user_name:
           type: string
           example: "John Doe"
-        user_pwd_hash:
+        user_pwd:
           type: string
           example: "newhashedpassword123"
         user_email:

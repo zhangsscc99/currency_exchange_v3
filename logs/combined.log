@@ -10,3 +10,61 @@
 2025-07-23 16:43:22 [ERROR]: 数据库连接失败:
 2025-07-23 16:43:32 [INFO]: Swagger文档已启用: /api-docs
 2025-07-23 16:43:32 [ERROR]: 数据库连接失败:
+2025-07-24 10:26:10 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 10:26:10 [INFO]: 数据库连接成功
+2025-07-24 10:26:10 [INFO]: 服务器运行在端口 3000
+2025-07-24 10:26:10 [INFO]: 环境: development
+2025-07-24 10:26:10 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 10:26:10 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 10:26:16 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-24 10:26:21 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 10:26:22 [INFO]: 数据库连接成功
+2025-07-24 10:26:22 [INFO]: 服务器运行在端口 3000
+2025-07-24 10:26:22 [INFO]: 环境: development
+2025-07-24 10:26:22 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 10:26:22 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 10:26:26 [INFO]: GET /api-docs - 301 - 4ms
+2025-07-24 10:26:26 [INFO]: GET /api-docs/ - 200 - 5ms
+2025-07-24 10:26:26 [INFO]: GET /api-docs/swagger-ui-init.js - 200 - 3ms
+2025-07-24 10:26:26 [INFO]: GET /api-docs/swagger-ui.css - 200 - 9ms
+2025-07-24 10:26:26 [INFO]: GET /api-docs/swagger-ui-standalone-preset.js - 200 - 10ms
+2025-07-24 10:26:26 [INFO]: GET /api-docs/swagger-ui-bundle.js - 200 - 40ms
+2025-07-24 10:26:26 [INFO]: GET /api-docs/favicon-32x32.png - 200 - 2ms
+2025-07-24 10:26:59 [INFO]: 创建新用户 - 数据: {"user_name":"Jane Doe","user_pwd":"thisisunsafe","user_email":"johndoe@example.com"}
+2025-07-24 10:26:59 [INFO]: 成功创建用户 - ID: [object Object], 名称: undefined
+2025-07-24 10:26:59 [INFO]: POST /api/v1/users/createUser - 201 - 81ms
+2025-07-24 10:27:00 [INFO]: 创建新用户 - 数据: {"user_name":"Jane Doe","user_pwd":"thisisunsafe","user_email":"johndoe@example.com"}
+2025-07-24 10:27:00 [WARN]: 用户名已存在: Jane Doe
+2025-07-24 10:27:00 [ERROR]: 创建用户失败:
+2025-07-24 10:27:00 [INFO]: POST /api/v1/users/createUser - 500 - 4ms
+2025-07-24 10:27:15 [INFO]: 创建新用户 - 数据: {"user_name":"Jane Doe","user_pwd":"thisisunsafe","user_email":"janedoe@example.com"}
+2025-07-24 10:27:15 [WARN]: 用户名已存在: Jane Doe
+2025-07-24 10:27:15 [ERROR]: 创建用户失败:
+2025-07-24 10:27:15 [INFO]: POST /api/v1/users/createUser - 500 - 4ms
+2025-07-24 10:27:45 [INFO]: 创建新用户 - 数据: {"user_name":"hermonsa","user_pwd":"thisisunsafe","user_email":"hermonsa@example.com"}
+2025-07-24 10:27:46 [INFO]: 成功创建用户 - ID: [object Object], 名称: undefined
+2025-07-24 10:27:46 [INFO]: POST /api/v1/users/createUser - 201 - 67ms
+2025-07-24 10:29:09 [INFO]: 更新用户信息 - ID: 3, 数据: {"user_name":"Jane Doe","user_pwd":"thisissafe","user_email":"johndoe@example.com"}
+2025-07-24 10:29:09 [ERROR]: 更新user失败 (ID: 3):
+2025-07-24 10:29:09 [ERROR]: 更新用户信息失败 - ID: 3:
+2025-07-24 10:29:09 [INFO]: PUT /api/v1/users/updateUser/3 - 500 - 24ms
+2025-07-24 10:29:32 [INFO]: 更新用户信息 - ID: 4, 数据: {"user_name":"hermonsa","user_pwd":"thisissafe","user_email":"hermonsa@example.com"}
+2025-07-24 10:29:32 [ERROR]: 更新user失败 (ID: 4):
+2025-07-24 10:29:32 [ERROR]: 更新用户信息失败 - ID: 4:
+2025-07-24 10:29:32 [INFO]: PUT /api/v1/users/updateUser/4 - 500 - 4ms
+2025-07-24 10:31:38 [INFO]: 更新用户信息 - ID: 4, 数据: {"user_name":"hermonsa","user_pwd":"thisissafe","user_email":"hermonsa@example.com"}
+2025-07-24 10:31:38 [ERROR]: 更新user失败 (ID: 4):
+2025-07-24 10:31:38 [ERROR]: 更新用户信息失败 - ID: 4:
+2025-07-24 10:31:38 [INFO]: PUT /api/v1/users/updateUser/4 - 500 - 3ms
+2025-07-24 10:32:41 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-24 10:33:57 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 10:33:57 [INFO]: 数据库连接成功
+2025-07-24 10:33:57 [INFO]: 服务器运行在端口 3000
+2025-07-24 10:33:57 [INFO]: 环境: development
+2025-07-24 10:33:57 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 10:33:57 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 10:34:05 [INFO]: 更新用户信息 - ID: 4, 数据: {"user_name":"hermonsa","user_pwd":"thisissafe","user_email":"hermonsa@example.com"}
+2025-07-24 10:34:20 [ERROR]: 更新user失败 (ID: 4):
+2025-07-24 10:34:29 [ERROR]: 更新用户信息失败 - ID: 4:
+2025-07-24 10:34:29 [INFO]: PUT /api/v1/users/updateUser/4 - 500 - 24060ms
+2025-07-24 10:34:53 [INFO]: 收到 SIGINT 信号，开始优雅关闭...

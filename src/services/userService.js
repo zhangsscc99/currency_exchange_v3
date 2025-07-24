@@ -1,6 +1,6 @@
-const { mountpath } = require('../app');
 const User = require('../models/User');
 const { logger } = require('../utils/logger');
+
 
 class UserService {
   // 根据ID获取用户
@@ -65,6 +65,22 @@ class UserService {
         logger.error(`更新用户信息失败 - ID: ${id}:`, error.message);
         throw new Error('更新用户信息失败');
       }
+    }
+
+    static async getUserByName(name){
+      const user = await User.getUserByName(name);
+      if (!user) {
+          throw new Error('User not found');
+      }
+      return user;
+    }
+
+    static async deleteUser(userId)  {
+      const result = await User.deleteUserById(userId);
+      if (result.affectedRows === 0) {
+          throw new Error('User not found');
+      }
+      return result;
     }
 }
 

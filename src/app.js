@@ -15,7 +15,7 @@ const { errorHandler, notFoundHandler } = require('./middleware/errorHandler');
 
 // 导入路由
 const currencyRoutes = require('./routes/currencyRoutes');
-
+const userRoutes = require('./routes/userRoutes');
 // 创建Express应用
 const app = express();
 
@@ -109,6 +109,7 @@ app.use((req, res, next) => {
 
 // API路由 - 简化路径，去掉 /api/v1 前缀
 app.use('/currencies', currencyRoutes);
+
 
 // Swagger文档
 if (process.env.SWAGGER_ENABLED !== 'false') {

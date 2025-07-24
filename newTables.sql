@@ -9,19 +9,20 @@ CREATE TABLE users (
     user_email VARCHAR(100) NOT NULL UNIQUE
 );
 
--- Create the currency table
+-- Create the currency table (移除currency_symbol的UNIQUE约束以支持符号重复，如￥)
 CREATE TABLE currency (
     currency_id INT PRIMARY KEY AUTO_INCREMENT,
     currency_name VARCHAR(50) NOT NULL UNIQUE,
-    currency_symbol VARCHAR(10) NOT NULL UNIQUE
+    currency_symbol VARCHAR(10) NOT NULL
 );
 
 Insert into currency (currency_id, currency_name, currency_symbol) values   
 (1, 'US Dollar', '$'),
 (2, 'Euro', '€'),
 (3, 'British Pound', '£'),
-(4, 'Japanese Yen', '¥'),
-(5, 'Swiss Franc', 'CHF');
+(4, 'Japanese Yen', '￥'),
+(5, 'Chinese Yuan', '￥'),  -- 人民币和日元都使用￥符号
+(6, 'Swiss Franc', 'CHF');
 
 Insert into users (user_id, user_name, user_pwd_hash, user_email) values
 (1, 'john_doe', 'hashed_password_123', 'john.doe@example.com'),

@@ -1,0 +1,23 @@
+{
+  "name": "currency-exchange-frontend",
+  "version": "1.0.0",
+  "description": "Currency Exchange Frontend with Vue.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 8080"
+  },
+  "dependencies": {
+    "vue": "^3.3.4",
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.0"
+  },
+  "keywords": ["vue", "currency", "exchange", "frontend"],
+  "author": "",
+  "license": "MIT"
+} 

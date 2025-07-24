@@ -26,7 +26,7 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 
 // 创建必要的目录
 const createDirectories = () => {
-  const directories = ['logs'];
+  const directories = ['logs', 'public'];
   directories.forEach(dir => {
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });
@@ -35,29 +35,39 @@ const createDirectories = () => {
   });
 };
 
-// 安全中间件
+// 安全中间件 - 调整CSP以允许内联样式和脚本
 app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
       styleSrc: ["'self'", "'unsafe-inline'"],
-      scriptSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'"],
       imgSrc: ["'self'", "data:", "https:"],
+      connectSrc: ["'self'", "http://localhost:3000"],
     },
   },
 }));
 
 // CORS配置
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN ? process.env.CORS_ORIGIN.split(',') : '*',
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true
+  origin: process.env.CORS_ORIGIN ? process.env.CORS_ORIGIN.split(',') : [
+    'http://localhost:8080',
+    'http://127.0.0.1:8080',
+    'http://localhost:3000',
+    'http://127.0.0.1:3000'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept', 'Origin'],
+  credentials: true,
+  optionsSuccessStatus: 200 // 支持旧版浏览器
 };
 app.use(cors(corsOptions));
 
 // 压缩响应
 app.use(compression());
+
+// 静态文件服务 - 提供前端页面
+app.use(express.static(path.join(__dirname, '..', 'public')));
 
 // 请求体解析
 app.use(express.json({ limit: '10mb' }));
@@ -76,7 +86,7 @@ if (process.env.RATE_LIMIT_ENABLED !== 'false') {
     standardHeaders: true,
     legacyHeaders: false,
   });
-  app.use('/api/', limiter);
+  app.use('/currencies', limiter);
 }
 
 // 请求日志中间件
@@ -99,8 +109,8 @@ app.use((req, res, next) => {
 });
 
 // API路由
-app.use('/api/v1/currencies', currencyRoutes);
-app.use('/api/v1/users', userRoutes);
+app.use('/users', userRoutes);
+app.use('/currencies', currencyRoutes);
 
 // Swagger文档
 if (process.env.SWAGGER_ENABLED !== 'false') {
@@ -143,12 +153,18 @@ app.get('/health', async (req, res) => {
   }
 });
 
-// 根路径
+// 根路径 - 重定向到Vue.js版本的前端页面
 app.get('/', (req, res) => {
+  res.redirect('/vue-index.html');
+});
+
+// API信息端点
+app.get('/api', (req, res) => {
   res.json({
     message: '货币兑换API v3',
     version: '3.0.0',
     documentation: '/api-docs',
+    frontend: '/',
     health: '/health',
     timestamp: new Date().toISOString()
   });
@@ -193,6 +209,7 @@ const startServer = async () => {
     const server = app.listen(PORT, () => {
       logger.info(`服务器运行在端口 ${PORT}`);
       logger.info(`环境: ${NODE_ENV}`);
+      logger.info(`前端页面: http://localhost:${PORT}`);
       logger.info(`API文档: http://localhost:${PORT}/api-docs`);
       logger.info(`健康检查: http://localhost:${PORT}/health`);
     });

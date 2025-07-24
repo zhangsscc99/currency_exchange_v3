@@ -20,54 +20,38 @@ const asyncHandler = (fn) => {
 };
 
 class CurrencyController {
-  // 获取所有货币
+  // 获取所有货币 - 简化返回格式
   static getAllCurrencies = asyncHandler(async (req, res) => {
-    const { page = 1, limit = 10, search = '' } = req.query;
+    const currencies = await CurrencyService.getAllCurrencies();
     
-    const options = {
-      page: parseInt(page),
-      limit: parseInt(limit),
-      search: search.trim()
-    };
-
-    const result = await CurrencyService.getAllCurrencies(options);
+    // 直接返回原始格式的货币数组，类似 getAndPostCurrency.js 风格
+    const result = currencies.map(currency => ({
+      currency_id: currency.currency_id,
+      currency_name: currency.currency_name,
+      currency_symbol: currency.currency_symbol
+    }));
     
-    sendResponse(res, 200, true, {
-      currencies: result.data.map(currency => currency.toJSON()),
-      pagination: result.pagination
-    });
+    res.json(result);
   });
 
-  // 根据ID获取货币
+  // 根据ID获取货币 - 简化返回格式
   static getCurrencyById = asyncHandler(async (req, res) => {
     const { id } = req.params;
     
     const currency = await CurrencyService.getCurrencyById(id);
     
     if (!currency) {
-      return sendResponse(res, 404, false, null, '货币不存在', 'NOT_FOUND');
+      return res.status(404).json({ error: '货币不存在' });
     }
     
-    sendResponse(res, 200, true, currency.toJSON());
+    res.json({
+      currency_id: currency.currency_id,
+      currency_name: currency.currency_name,
+      currency_symbol: currency.currency_symbol
+    });
   });
 
-  // 创建新货币
-  static createCurrency = asyncHandler(async (req, res) => {
-    const { currency_name, currency_symbol } = req.body;
-    
-    const currencyData = {
-      currency_name: currency_name.trim(),
-      currency_symbol: currency_symbol.trim()
-    };
-
-    const newCurrency = await CurrencyService.createCurrency(currencyData);
-    
-    logger.info(`用户创建了新货币: ${newCurrency.currency_name} (${newCurrency.currency_symbol})`);
-    
-    sendResponse(res, 201, true, newCurrency.toJSON(), '货币创建成功');
-  });
-
-  // 更新货币 - 这是主要的PUT功能
+  // 更新货币 - 简化返回格式
   static updateCurrency = asyncHandler(async (req, res) => {
     const { id } = req.params;
     const updateData = {};
@@ -85,88 +69,16 @@ class CurrencyController {
     const updatedCurrency = await CurrencyService.updateCurrency(id, updateData);
     
     if (!updatedCurrency) {
-      return sendResponse(res, 404, false, null, '货币不存在', 'NOT_FOUND');
+      return res.status(404).json({ error: '货币不存在' });
     }
 
     logger.info(`用户更新了货币: ID ${id}, 新数据: ${JSON.stringify(updateData)}`);
     
-    sendResponse(res, 200, true, updatedCurrency.toJSON(), '货币更新成功');
-  });
-
-  // 删除货币
-  static deleteCurrency = asyncHandler(async (req, res) => {
-    const { id } = req.params;
-    
-    const success = await CurrencyService.deleteCurrency(id);
-    
-    if (!success) {
-      return sendResponse(res, 404, false, null, '货币不存在', 'NOT_FOUND');
-    }
-    
-    logger.info(`用户删除了货币: ID ${id}`);
-    
-    sendResponse(res, 200, true, null, '货币删除成功');
-  });
-
-  // 检查货币名称可用性
-  static checkNameAvailability = asyncHandler(async (req, res) => {
-    const { name } = req.query;
-    const { excludeId } = req.query;
-    
-    if (!name) {
-      return sendResponse(res, 400, false, null, '货币名称不能为空', 'VALIDATION_ERROR');
-    }
-    
-    const isAvailable = await CurrencyService.checkNameAvailability(
-      name.trim(), 
-      excludeId ? parseInt(excludeId) : null
-    );
-    
-    sendResponse(res, 200, true, { 
-      available: isAvailable,
-      name: name.trim()
-    });
-  });
-
-  // 检查货币符号可用性
-  static checkSymbolAvailability = asyncHandler(async (req, res) => {
-    const { symbol } = req.query;
-    const { excludeId } = req.query;
-    
-    if (!symbol) {
-      return sendResponse(res, 400, false, null, '货币符号不能为空', 'VALIDATION_ERROR');
-    }
-    
-    const isAvailable = await CurrencyService.checkSymbolAvailability(
-      symbol.trim(), 
-      excludeId ? parseInt(excludeId) : null
-    );
-    
-    sendResponse(res, 200, true, { 
-      available: isAvailable,
-      symbol: symbol.trim()
-    });
-  });
-
-  // 搜索货币
-  static searchCurrencies = asyncHandler(async (req, res) => {
-    const { q: searchTerm, page = 1, limit = 10 } = req.query;
-    
-    if (!searchTerm) {
-      return sendResponse(res, 400, false, null, '搜索关键词不能为空', 'VALIDATION_ERROR');
-    }
-    
-    const options = {
-      page: parseInt(page),
-      limit: parseInt(limit)
-    };
-
-    const result = await CurrencyService.searchCurrencies(searchTerm.trim(), options);
-    
-    sendResponse(res, 200, true, {
-      currencies: result.data.map(currency => currency.toJSON()),
-      pagination: result.pagination,
-      search_term: searchTerm.trim()
+    res.json({
+      currency_id: updatedCurrency.currency_id,
+      currency_name: updatedCurrency.currency_name,
+      currency_symbol: updatedCurrency.currency_symbol,
+      message: '货币更新成功'
     });
   });
 }

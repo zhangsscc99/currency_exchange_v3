@@ -28,3 +28,85 @@ Error: listen EADDRINUSE: address already in use :::3000
     at Function.listen (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\express\lib\application.js:635:24)
     at startServer (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\app.js:201:24)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-24 11:21:08 [ERROR]: uncaughtException: Cannot find module 'bcrypt'
+Require stack:
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\User.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\routes\userRoutes.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module 'bcrypt'
+Require stack:
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\User.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\routes\userRoutes.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\User.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+Error: Cannot find module 'bcrypt'
+Require stack:
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\User.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\routes\userRoutes.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\User.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+2025-07-24 11:21:27 [ERROR]: uncaughtException: Cannot find module 'bcrypt'
+Require stack:
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\User.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\routes\userRoutes.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\app.js
+Error: Cannot find module 'bcrypt'
+Require stack:
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\User.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\routes\userRoutes.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\User.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+Error: Cannot find module 'bcrypt'
+Require stack:
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\User.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\userService.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\userController.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\routes\userRoutes.js
+- C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\User.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)

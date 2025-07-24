@@ -42,6 +42,9 @@
             <button @click="getCurrencyById" class="btn btn-warning" :disabled="loading">
               <i class="fas fa-search"></i> 根据ID查询货币
             </button>
+            <button @click="toggleCreateCurrency" class="btn btn-success" :disabled="loading">
+              <i class="fas fa-plus"></i> 创建新货币 (POST)
+            </button>
             <button @click="toggleDirectUpdate" class="btn btn-primary" :disabled="loading">
               <i class="fas fa-edit"></i> 直接更新货币 (PUT)
             </button>
@@ -101,6 +104,43 @@
               placeholder="输入货币ID (例如: 1)"
               min="1"
             >
+          </div>
+
+          <!-- 创建新货币表单 -->
+          <div v-if="showCreateForm" class="create-currency-section">
+            <h3><i class="fas fa-plus-circle"></i> 创建新货币 - POST API调用</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>货币名称 (必填)：</label>
+                <input 
+                  type="text" 
+                  v-model="createForm.currency_name" 
+                  placeholder="例如：欧元"
+                  required
+                >
+              </div>
+              <div class="form-group">
+                <label>货币符号 (必填)：</label>
+                <input 
+                  type="text" 
+                  v-model="createForm.currency_symbol" 
+                  placeholder="例如：EUR"
+                  required
+                >
+              </div>
+            </div>
+            <div class="button-group">
+              <button 
+                @click="createNewCurrency" 
+                class="btn btn-success" 
+                :disabled="loading || !createForm.currency_name || !createForm.currency_symbol"
+              >
+                <i class="fas fa-save"></i> 执行 POST 请求
+              </button>
+              <button @click="clearCreateForm" class="btn btn-secondary">
+                <i class="fas fa-times"></i> 取消
+              </button>
+            </div>
           </div>
 
           <!-- 货币列表 -->
@@ -204,7 +244,13 @@ export default {
       currency_symbol: ''
     })
 
+    const createForm = reactive({
+      currency_name: '',
+      currency_symbol: ''
+    })
+
     const showDirectUpdate = ref(false)
+    const showCreateForm = ref(false)
 
     // API基础URL - 使用代理
     const API_BASE = '/api'
@@ -344,6 +390,47 @@ export default {
       directUpdateForm.currency_symbol = ''
     }
 
+    // 创建货币的方法
+    const toggleCreateCurrency = () => {
+      showCreateForm.value = !showCreateForm.value
+      if (!showCreateForm.value) {
+        clearCreateForm()
+      }
+    }
+
+    const createNewCurrency = () => {
+      if (!createForm.currency_name || !createForm.currency_symbol) {
+        alert('请填写货币名称和符号')
+        return
+      }
+      
+      const newCurrencyData = {
+        currency_name: createForm.currency_name.trim(),
+        currency_symbol: createForm.currency_symbol.trim()
+      }
+      
+      callApi(
+        () => axios.post(`${API_BASE}/currencies`, newCurrencyData),
+        `成功创建新货币: ${newCurrencyData.currency_name}`
+      ).then(data => {
+        // 将新创建的货币添加到列表
+        if (currencies.value.length > 0) {
+          currencies.value.push(data)
+        }
+        clearCreateForm()
+        showCreateForm.value = false
+        // 刷新货币列表以显示最新数据
+        getAllCurrencies()
+      }).catch(error => {
+        console.error('创建货币失败:', error)
+      })
+    }
+
+    const clearCreateForm = () => {
+      createForm.currency_name = ''
+      createForm.currency_symbol = ''
+    }
+
     return {
       loading,
       currencies,
@@ -354,7 +441,9 @@ export default {
       systemStatus,
       updateForm,
       directUpdateForm,
+      createForm,
       showDirectUpdate,
+      showCreateForm,
       checkHealth,
       getApiInfo,
       getAllCurrencies,
@@ -364,7 +453,10 @@ export default {
       clearSelection,
       toggleDirectUpdate,
       directUpdateCurrency,
-      clearDirectUpdate
+      clearDirectUpdate,
+      toggleCreateCurrency,
+      createNewCurrency,
+      clearCreateForm
     }
   }
 }

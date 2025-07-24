@@ -51,17 +51,8 @@ const validateUpdateCurrency = [
     .notEmpty()
     .withMessage('货币符号不能为空')
     .isLength({ min: 1, max: 10 })
-    .withMessage('货币符号长度必须在1-10个字符之间')
-    .custom(async (value, { req }) => {
-      if (value) {
-        const currencyId = parseInt(req.params.id);
-        const exists = await Currency.isSymbolExists(value, currencyId);
-        if (exists) {
-          throw new Error('货币符号已存在');
-        }
-      }
-      return true;
-    }),
+    .withMessage('货币符号长度必须在1-10个字符之间'),
+    // 移除货币符号重复性检查 - 允许多个货币使用相同符号
     
   // 确保至少有一个字段需要更新
   body()
@@ -76,7 +67,37 @@ const validateUpdateCurrency = [
   handleValidationErrors
 ];
 
+// 验证创建货币的数据
+const validateCreateCurrency = [
+  body('currency_name')
+    .trim()
+    .notEmpty()
+    .withMessage('货币名称是必填字段')
+    .isLength({ min: 1, max: 50 })
+    .withMessage('货币名称长度必须在1-50个字符之间')
+    .matches(/^[a-zA-Z\u4e00-\u9fa5\s]+$/)
+    .withMessage('货币名称只能包含字母、中文和空格')
+    .custom(async (value) => {
+      const exists = await Currency.isNameExists(value);
+      if (exists) {
+        throw new Error('货币名称已存在');
+      }
+      return true;
+    }),
+    
+  body('currency_symbol')
+    .trim()
+    .notEmpty()
+    .withMessage('货币符号是必填字段')
+    .isLength({ min: 1, max: 10 })
+    .withMessage('货币符号长度必须在1-10个字符之间'),
+    // 移除货币符号重复性检查 - 允许多个货币使用相同符号（如￥）
+    
+  handleValidationErrors
+];
+
 module.exports = {
+  validateCreateCurrency,
   validateUpdateCurrency,
   handleValidationErrors
 }; 

@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const UserController = require('../controllers/UserController');
+const userController = require('../controllers/userController');
 
 // GET /searchUser/users?name=xxx
-router.get('/searchUser/', UserController.getUserByName);
+router.get('/searchUser/', userController.getUserByName);
 
 // DELETE /users/:id
-router.delete('/:id', UserController.deleteUser);
+router.delete('/:id', userController.deleteUser);
 
 
 // Route to create a new user

@@ -1,4 +1,3 @@
-const { mountpath } = require('../app');
 const User = require('../models/User');
 const { logger } = require('../utils/logger');
 

@@ -4,3 +4,232 @@
 2025-07-23 16:43:21 [ERROR]: 数据库连接失败:
 2025-07-23 16:43:22 [ERROR]: 数据库连接失败:
 2025-07-23 16:43:32 [ERROR]: 数据库连接失败:
+2025-07-23 16:48:03 [ERROR]: 数据库连接失败:
+2025-07-23 16:50:35 [ERROR]: 数据库连接失败:
+2025-07-23 16:50:35 [ERROR]: 数据库初始化失败:
+2025-07-23 16:51:39 [ERROR]: 数据库连接失败:
+2025-07-23 16:52:08 [ERROR]: 数据库连接失败:
+2025-07-23 16:52:11 [ERROR]: 数据库连接失败:
+2025-07-23 16:52:39 [ERROR]: 数据库连接失败:
+2025-07-23 17:01:00 [ERROR]: 数据库查询错误:
+2025-07-23 17:01:00 [ERROR]: 获取货币列表失败:
+2025-07-23 17:01:00 [ERROR]: 获取货币列表失败:
+2025-07-23 17:01:00 [ERROR]: 错误: 获取货币列表失败
+Error: 获取货币列表失败
+    at CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:14:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:01:00 [ERROR]: 数据库查询错误:
+2025-07-23 17:01:39 [ERROR]: 数据库查询错误:
+2025-07-23 17:01:39 [ERROR]: 获取货币列表失败:
+2025-07-23 17:01:39 [ERROR]: 获取货币列表失败:
+2025-07-23 17:01:39 [ERROR]: 错误: 获取货币列表失败
+Error: 获取货币列表失败
+    at CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:14:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:01:39 [ERROR]: 数据库查询错误:
+2025-07-23 17:02:55 [ERROR]: 数据库查询错误:
+2025-07-23 17:02:55 [ERROR]: 获取货币列表失败:
+2025-07-23 17:02:55 [ERROR]: 错误详情: Table 'exchange.currency' doesn't exist
+Error: Table 'exchange.currency' doesn't exist
+    at PromisePool.execute (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at executeQuery (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\config\database.js:208:34)
+    at Currency.findAll (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\Currency.js:41:9)
+    at CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:9:37)
+    at C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:42
+    at C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:18:21
+    at Layer.handle [as handle_request] (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\express\lib\router\layer.js:95:5)
+2025-07-23 17:02:55 [ERROR]: 获取货币列表失败:
+2025-07-23 17:02:55 [ERROR]: 错误: 获取货币列表失败
+Error: 获取货币列表失败
+    at CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:14:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:02:55 [ERROR]: 数据库查询错误:
+2025-07-23 17:05:16 [ERROR]: 数据库查询错误:
+2025-07-23 17:05:16 [ERROR]: 获取货币列表失败:
+2025-07-23 17:05:16 [ERROR]: 错误详情: Incorrect arguments to mysqld_stmt_execute
+Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at executeQuery (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\config\database.js:208:34)
+    at Currency.findAll (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\Currency.js:41:9)
+    at CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:9:37)
+    at C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:42
+    at C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:18:21
+    at Layer.handle [as handle_request] (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\express\lib\router\layer.js:95:5)
+2025-07-23 17:05:16 [ERROR]: 获取货币列表失败:
+2025-07-23 17:05:16 [ERROR]: 错误: 获取货币列表失败
+Error: 获取货币列表失败
+    at CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:14:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:07:13 [ERROR]: 数据库查询错误:
+2025-07-23 17:07:14 [ERROR]: 获取货币列表失败:
+2025-07-23 17:07:14 [ERROR]: 错误详情: Incorrect arguments to mysqld_stmt_execute
+Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at executeQuery (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\config\database.js:208:34)
+    at Currency.findAll (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\Currency.js:50:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:9:22)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:07:14 [ERROR]: 获取货币列表失败:
+2025-07-23 17:07:14 [ERROR]: 错误: 获取货币列表失败
+Error: 获取货币列表失败
+    at CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:14:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:08:01 [ERROR]: 数据库查询错误:
+2025-07-23 17:08:01 [ERROR]: 获取货币列表失败:
+2025-07-23 17:08:01 [ERROR]: 错误详情: Incorrect arguments to mysqld_stmt_execute
+Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at executeQuery (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\config\database.js:208:34)
+    at Currency.findAll (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\Currency.js:50:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:9:22)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:08:01 [ERROR]: 获取货币列表失败:
+2025-07-23 17:08:01 [ERROR]: 错误: 获取货币列表失败
+Error: 获取货币列表失败
+    at CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:14:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:11:30 [ERROR]: 数据库查询错误:
+2025-07-23 17:11:30 [ERROR]: 获取货币列表失败:
+2025-07-23 17:11:30 [ERROR]: 错误详情: Incorrect arguments to mysqld_stmt_execute
+Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at executeQuery (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\config\database.js:208:34)
+    at Currency.findAll (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\Currency.js:50:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:9:22)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:11:30 [ERROR]: 获取货币列表失败:
+2025-07-23 17:11:30 [ERROR]: 错误: 获取货币列表失败
+Error: 获取货币列表失败
+    at CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:14:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:13:59 [ERROR]: 数据库查询错误:
+2025-07-23 17:13:59 [ERROR]: 获取货币列表失败:
+2025-07-23 17:13:59 [ERROR]: 错误详情: Incorrect arguments to mysqld_stmt_execute
+Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at executeQuery (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\config\database.js:208:34)
+    at Currency.findAll (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\Currency.js:50:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:9:22)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:13:59 [ERROR]: 获取货币列表失败:
+2025-07-23 17:13:59 [ERROR]: 错误: 获取货币列表失败
+Error: 获取货币列表失败
+    at CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:14:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:16:17 [ERROR]: 数据库查询错误:
+2025-07-23 17:16:17 [ERROR]: 获取货币列表失败:
+2025-07-23 17:16:17 [ERROR]: 错误详情: Incorrect arguments to mysqld_stmt_execute
+Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at executeQuery (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\config\database.js:208:34)
+    at Currency.findAll (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\Currency.js:50:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:9:22)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:16:17 [ERROR]: 获取货币列表失败:
+2025-07-23 17:16:17 [ERROR]: 错误: 获取货币列表失败
+Error: 获取货币列表失败
+    at CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:14:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:18:57 [ERROR]: 数据库查询错误:
+2025-07-23 17:18:57 [ERROR]: 获取货币列表失败:
+2025-07-23 17:18:57 [ERROR]: 错误详情: Incorrect arguments to mysqld_stmt_execute
+Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at executeQuery (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\config\database.js:208:34)
+    at Currency.findAll (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\Currency.js:50:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:9:22)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:18:57 [ERROR]: 获取货币列表失败:
+2025-07-23 17:18:57 [ERROR]: 错误: 获取货币列表失败
+Error: 获取货币列表失败
+    at CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:14:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:19:15 [ERROR]: 数据库查询错误:
+2025-07-23 17:19:15 [ERROR]: 获取货币列表失败:
+2025-07-23 17:19:15 [ERROR]: 错误详情: Incorrect arguments to mysqld_stmt_execute
+Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at executeQuery (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\config\database.js:208:34)
+    at Currency.findAll (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\Currency.js:50:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:9:22)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:19:15 [ERROR]: 获取货币列表失败:
+2025-07-23 17:19:15 [ERROR]: 错误: 获取货币列表失败
+Error: 获取货币列表失败
+    at CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:14:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:21:22 [ERROR]: 数据库查询错误:
+2025-07-23 17:21:22 [ERROR]: 获取货币列表失败:
+2025-07-23 17:21:22 [ERROR]: 错误详情: Incorrect arguments to mysqld_stmt_execute
+Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at executeQuery (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\config\database.js:208:34)
+    at Currency.findAll (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\Currency.js:50:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:9:22)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-23 17:21:22 [ERROR]: 获取货币列表失败:
+2025-07-23 17:21:22 [ERROR]: 错误: 获取货币列表失败
+Error: 获取货币列表失败
+    at CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:14:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-24 09:14:01 [ERROR]: 数据库查询错误:
+2025-07-24 09:14:01 [ERROR]: 获取货币列表失败:
+2025-07-24 09:14:01 [ERROR]: 错误类型:
+2025-07-24 09:14:01 [ERROR]: 错误代码:
+2025-07-24 09:14:01 [ERROR]: SQL状态:
+2025-07-24 09:14:01 [ERROR]: 错误详情: Incorrect arguments to mysqld_stmt_execute
+Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at executeQuery (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\config\database.js:208:34)
+    at Currency.findAll (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\models\Currency.js:63:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:9:22)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-24 09:14:01 [ERROR]: 获取货币列表失败:
+2025-07-24 09:14:01 [ERROR]: 错误: 获取货币列表失败
+Error: 获取货币列表失败
+    at CurrencyService.getAllCurrencies (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\services\currencyService.js:14:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\controllers\currencyController.js:33:20
+2025-07-24 09:24:04 [ERROR]: 未捕获的异常: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+    at listenInCluster (node:net:1996:12)
+    at Server.listen (node:net:2101:7)
+    at Function.listen (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\express\lib\application.js:635:24)
+    at startServer (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\app.js:201:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-24 10:18:44 [ERROR]: 未捕获的异常: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+    at listenInCluster (node:net:1996:12)
+    at Server.listen (node:net:2101:7)
+    at Function.listen (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\node_modules\express\lib\application.js:635:24)
+    at startServer (C:\Users\ZhuanZ（无密码）\Desktop\currency_exchange_v3\src\app.js:201:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

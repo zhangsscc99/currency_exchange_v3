@@ -34,7 +34,23 @@
       fetch(`${API_BASE}/currency`)
         .then(res => res.json())
         .then(data => {
-          document.getElementById('currencyList').textContent = JSON.stringify(data, null, 2);
+          <!-- document.getElementById('currencyList').textContent = JSON.stringify(data, null, 2); -->
+            
+          const container = document.getElementById('currencyList');
+
+          let html = '<table border="1" cellpadding="5" cellspacing="0">';
+            html += '<tr><th>ID</th><th>Currency Name</th><th>Currency Symbol</th></tr>';
+
+            data.forEach(currency => {
+              html += `<tr>
+                <td>${currency.currency_id}</td>
+                <td>${currency.currency_name}</td>
+                <td>${currency.currency_symbol}</td>
+              </tr>`;
+            });
+
+            html += '</table>';
+            container.innerHTML = html;
         })
         .catch(err => {
           document.getElementById('currencyList').textContent = '请求失败：' + err;

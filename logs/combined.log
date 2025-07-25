@@ -1,1 +1,109 @@
 
+2025-07-24 13:16:31 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 13:16:31 [INFO]: 创建目录: public
+2025-07-24 13:16:31 [INFO]: 数据库连接池创建成功
+2025-07-24 13:16:31 [INFO]: 数据库连接成功
+2025-07-24 13:16:31 [INFO]: 启动时检查currency_symbol约束...
+2025-07-24 13:16:31 [INFO]: 检查currency_symbol的UNIQUE索引...
+2025-07-24 13:16:31 [INFO]: 找到currency_symbol的索引: [{"INDEX_NAME":"currency_symbol","NON_UNIQUE":0,"COLUMN_NAME":"currency_symbol"}]
+2025-07-24 13:16:31 [INFO]: 发现currency_symbol的UNIQUE索引: currency_symbol，正在移除...
+2025-07-24 13:16:31 [INFO]: ✅ 成功移除currency_symbol的UNIQUE索引: currency_symbol
+2025-07-24 13:16:31 [INFO]: 🎉 验证成功：currency_symbol字段已无UNIQUE约束，现在支持符号重复！
+2025-07-24 13:16:31 [INFO]: 服务器运行在端口 3000
+2025-07-24 13:16:31 [INFO]: 环境: development
+2025-07-24 13:16:31 [INFO]: 前端页面: http://localhost:3000
+2025-07-24 13:16:31 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 13:16:31 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-24 13:16:44 [WARN]: 404错误: PUT /api/v1/users/updateUser/4
+2025-07-24 13:16:44 [INFO]: PUT /api/v1/users/updateUser/4 - 404 - 5ms
+2025-07-24 13:17:00 [INFO]: GET /api-docs/ - 304 - 1ms
+2025-07-24 13:17:00 [INFO]: GET /api-docs/swagger-ui-init.js - 200 - 4ms
+2025-07-24 13:17:00 [INFO]: GET /api-docs/swagger-ui.css - 200 - 10ms
+2025-07-24 13:17:00 [INFO]: GET /api-docs/swagger-ui-standalone-preset.js - 200 - 11ms
+2025-07-24 13:17:00 [INFO]: GET /api-docs/swagger-ui-bundle.js - 200 - 41ms
+2025-07-24 13:17:01 [INFO]: GET /api-docs/favicon-32x32.png - 200 - 2ms
+2025-07-24 13:17:26 [INFO]: 创建新用户 - 数据: {"user_name":"nils","user_pwd":"123456","user_email":"nils@example.com"}
+2025-07-24 13:17:26 [INFO]: 成功创建用户 - ID: [object Object], 名称: undefined
+2025-07-24 13:17:26 [INFO]: POST /users/createUser - 201 - 74ms
+2025-07-24 13:17:52 [INFO]: 更新用户信息 - ID: 5, 数据: {"user_name":"nils","user_pwd":"n3u3da!","user_email":"nils@example.com"}
+2025-07-24 13:17:52 [INFO]: 成功更新用户信息 - ID: 5, 名称: undefined
+2025-07-24 13:17:52 [INFO]: PUT /users/updateUser/5 - 200 - 72ms
+2025-07-24 15:48:30 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-24 16:14:05 [INFO]: Swagger文档已启用: /api-docs
+2025-07-24 16:14:05 [INFO]: 数据库连接池创建成功
+2025-07-24 16:14:05 [INFO]: 数据库连接成功
+2025-07-24 16:14:05 [INFO]: 启动时检查currency_symbol约束...
+2025-07-24 16:14:05 [INFO]: 检查currency_symbol的UNIQUE索引...
+2025-07-24 16:14:05 [INFO]: 找到currency_symbol的索引: []
+2025-07-24 16:14:05 [INFO]: ✅ currency_symbol字段没有UNIQUE索引，符合预期
+2025-07-24 16:14:05 [INFO]: 🎉 验证成功：currency_symbol字段已无UNIQUE约束，现在支持符号重复！
+2025-07-24 16:14:05 [INFO]: 服务器运行在端口 3000
+2025-07-24 16:14:05 [INFO]: 环境: development
+2025-07-24 16:14:05 [INFO]: 前端页面: http://localhost:3000
+2025-07-24 16:14:05 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-24 16:14:05 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-25 13:56:38 [INFO]: Swagger文档已启用: /api-docs
+2025-07-25 13:56:38 [INFO]: 数据库连接池创建成功
+2025-07-25 13:56:38 [INFO]: 数据库连接成功
+2025-07-25 13:56:38 [INFO]: 启动时检查currency_symbol约束...
+2025-07-25 13:56:38 [INFO]: 检查currency_symbol的UNIQUE索引...
+2025-07-25 13:56:38 [INFO]: 找到currency_symbol的索引: []
+2025-07-25 13:56:38 [INFO]: ✅ currency_symbol字段没有UNIQUE索引，符合预期
+2025-07-25 13:56:38 [INFO]: 🎉 验证成功：currency_symbol字段已无UNIQUE约束，现在支持符号重复！
+2025-07-25 13:56:38 [INFO]: 服务器运行在端口 3000
+2025-07-25 13:56:38 [INFO]: 环境: development
+2025-07-25 13:56:38 [INFO]: 前端页面: http://localhost:3000
+2025-07-25 13:56:38 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-25 13:56:38 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-25 13:56:45 [INFO]: 获取所有货币列表
+2025-07-25 13:56:45 [INFO]: 执行查询: SELECT * FROM currency ORDER BY currency_id ASC
+2025-07-25 13:56:45 [INFO]: 成功获取 0 条货币记录
+2025-07-25 13:56:45 [INFO]: 成功获取 0 条货币记录
+2025-07-25 13:56:45 [INFO]: GET /currencies - 200 - 28ms
+2025-07-25 13:59:06 [INFO]: 获取所有货币列表
+2025-07-25 13:59:06 [INFO]: 执行查询: SELECT * FROM currency ORDER BY currency_id ASC
+2025-07-25 13:59:06 [INFO]: 成功获取 6 条货币记录
+2025-07-25 13:59:06 [INFO]: 成功获取 6 条货币记录
+2025-07-25 13:59:06 [INFO]: GET /currencies - 200 - 4ms
+2025-07-25 14:00:14 [WARN]: 404错误: GET /user/searchUser?name=nils
+2025-07-25 14:00:14 [INFO]: GET /user/searchUser?name=nils - 404 - 1ms
+2025-07-25 14:00:17 [WARN]: 404错误: GET /user/searchUser?name=nils
+2025-07-25 14:00:17 [INFO]: GET /user/searchUser?name=nils - 404 - 1ms
+2025-07-25 14:02:18 [WARN]: 404错误: POST /user/createUser
+2025-07-25 14:02:18 [INFO]: POST /user/createUser - 404 - 1ms
+2025-07-25 14:03:10 [INFO]: 收到 SIGINT 信号，开始优雅关闭...
+2025-07-25 14:03:16 [INFO]: Swagger文档已启用: /api-docs
+2025-07-25 14:03:16 [INFO]: 数据库连接池创建成功
+2025-07-25 14:03:16 [INFO]: 数据库连接成功
+2025-07-25 14:03:16 [INFO]: 启动时检查currency_symbol约束...
+2025-07-25 14:03:16 [INFO]: 检查currency_symbol的UNIQUE索引...
+2025-07-25 14:03:16 [INFO]: 找到currency_symbol的索引: []
+2025-07-25 14:03:16 [INFO]: ✅ currency_symbol字段没有UNIQUE索引，符合预期
+2025-07-25 14:03:16 [INFO]: 🎉 验证成功：currency_symbol字段已无UNIQUE约束，现在支持符号重复！
+2025-07-25 14:03:16 [INFO]: 服务器运行在端口 3000
+2025-07-25 14:03:16 [INFO]: 环境: development
+2025-07-25 14:03:16 [INFO]: 前端页面: http://localhost:3000
+2025-07-25 14:03:16 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-25 14:03:16 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-25 14:05:57 [INFO]: 获取所有货币列表
+2025-07-25 14:05:57 [INFO]: 执行查询: SELECT * FROM currency ORDER BY currency_id ASC
+2025-07-25 14:05:57 [INFO]: 成功获取 6 条货币记录
+2025-07-25 14:05:57 [INFO]: 成功获取 6 条货币记录
+2025-07-25 14:05:57 [INFO]: GET /currencies - 304 - 11ms
+2025-07-25 14:07:48 [WARN]: 404错误: POST /user/createUser
+2025-07-25 14:07:48 [INFO]: POST /user/createUser - 404 - 2ms
+2025-07-25 14:12:03 [INFO]: Swagger文档已启用: /api-docs
+2025-07-25 14:12:03 [INFO]: 数据库连接池创建成功
+2025-07-25 14:12:03 [INFO]: 数据库连接成功
+2025-07-25 14:12:03 [INFO]: 启动时检查currency_symbol约束...
+2025-07-25 14:12:03 [INFO]: 检查currency_symbol的UNIQUE索引...
+2025-07-25 14:12:03 [INFO]: 找到currency_symbol的索引: []
+2025-07-25 14:12:03 [INFO]: ✅ currency_symbol字段没有UNIQUE索引，符合预期
+2025-07-25 14:12:03 [INFO]: 🎉 验证成功：currency_symbol字段已无UNIQUE约束，现在支持符号重复！
+2025-07-25 14:12:03 [INFO]: 服务器运行在端口 3000
+2025-07-25 14:12:03 [INFO]: 环境: development
+2025-07-25 14:12:03 [INFO]: 前端页面: http://localhost:3000
+2025-07-25 14:12:03 [INFO]: API文档: http://localhost:3000/api-docs
+2025-07-25 14:12:03 [INFO]: 健康检查: http://localhost:3000/health
+2025-07-25 14:12:19 [WARN]: 404错误: POST /user/createUser
+2025-07-25 14:12:19 [INFO]: POST /user/createUser - 404 - 6ms
